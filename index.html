@@ -123,12 +123,12 @@
         <h2 class="section-title" id="video-title" data-reveal>대회, 1분으로 미리보기</h2>
         <div class="intro-video" style="margin-top: 28px;" data-reveal>
           <!-- 자동재생을 위해 muted playsinline 은 반드시 유지 (CLAUDE.md gotchas).
-               controls 는 common.js 가 마우스 오버 시에만 노출. 배경 영상 교체 시
+               컨트롤(재생 바)은 표시하지 않는 배경 재생용. 영상 교체 시
                assets/video/intro.mp4 와 poster 이미지를 바꾸면 됩니다. -->
           <video
             autoplay muted loop playsinline preload="metadata"
             poster="assets/images/intro-poster.jpg"
-            data-hover-controls
+            disablepictureinpicture
             aria-label="2026 AI 창의융합대회 소개 영상">
             <source src="assets/video/intro.mp4" type="video/mp4" />
             <div class="intro-video__placeholder">
