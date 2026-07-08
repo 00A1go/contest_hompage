@@ -1,0 +1,29 @@
+name: Validate JSON
+
+on:
+  pull_request:
+    paths:
+      - "data/**/*.json"
+  push:
+    paths:
+      - "data/**/*.json"
+
+jobs:
+  validate-json:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate all JSON files under data/
+        run: |
+          set -e
+          shopt -s globstar nullglob
+          found=0
+          for f in data/**/*.json; do
+            found=1
+            echo "Checking $f"
+            python3 -m json.tool "$f" > /dev/null
+          done
+          if [ "$found" -eq 0 ]; then
+            echo "No JSON files found under data/ — nothing to validate."
+          fi
+          echo "All JSON files are valid."

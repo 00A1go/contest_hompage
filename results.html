@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>대회결과 · 2026 AI 창의융합대회</title>
+  <meta name="description" content="2026 AI 창의융합대회 수상 결과. 결과는 2026년 11월 13일(금) 14:00 발표 예정이며, 발표 후 분야별 수상작을 이곳에서 확인할 수 있습니다." />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="대회결과 · 2026 AI 창의융합대회" />
+  <meta property="og:description" content="분야별 수상작 안내. 2026.11.13 발표 예정." />
+  <meta property="og:image" content="assets/images/og-image.png" />
+  <meta property="og:locale" content="ko_KR" />
+
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <main id="main">
+    <header class="page-head">
+      <div class="wrap">
+        <p class="eyebrow" data-index="대회결과"></p>
+        <h1 class="page-head__title">대회결과</h1>
+        <p class="page-head__lead">
+          심사를 거친 분야별 수상작을 안내합니다.
+        </p>
+      </div>
+    </header>
+
+    <section class="section">
+      <div class="wrap wrap--wide">
+        <!-- 발표 전 상태 -->
+        <div class="results-pending" id="results-pending" data-reveal>
+          <p class="results-pending__tag">Result Announcement</p>
+          <p class="results-pending__date">2026년 11월 13일(금) 14:00 발표 예정</p>
+          <p class="results-pending__note">
+            결과가 발표되면 이 페이지에서 분야별 수상작을 확인할 수 있습니다.
+          </p>
+        </div>
+
+        <!-- 발표 후 상태 (results.js 가 채움) -->
+        <div id="results-announced" hidden>
+          <div id="results-groups"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="assets/js/common.js" defer></script>
+  <script src="assets/js/results.js" defer></script>
+</body>
+</html>

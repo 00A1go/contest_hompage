@@ -1,0 +1,58 @@
+{
+  "works": [
+    {
+      "id": "math-01",
+      "category": "math",
+      "title": "그래프 색칠 문제로 본 시간표 자동 배정",
+      "team": ["김서연", "박도윤"],
+      "youtubeId": "dQw4w9WgXcQ",
+      "description": "그래프 이론의 채색 알고리즘을 학교 시간표 편성에 적용한 사례 (샘플 데이터).",
+      "award": null
+    },
+    {
+      "id": "physics-01",
+      "category": "physics",
+      "title": "머신러닝으로 추정하는 진자 운동의 감쇠 계수",
+      "team": ["이준호", "최유진", "정민석"],
+      "youtubeId": "dQw4w9WgXcQ",
+      "description": "영상 데이터에서 진자의 감쇠를 회귀 모델로 추정 (샘플 데이터).",
+      "award": null
+    },
+    {
+      "id": "chemistry-01",
+      "category": "chemistry",
+      "title": "분자 구조 임베딩을 이용한 용해도 예측",
+      "team": ["한지우", "오세훈"],
+      "youtubeId": "dQw4w9WgXcQ",
+      "description": "분자 지문(fingerprint) 기반 용해도 예측 모델 (샘플 데이터).",
+      "award": null
+    },
+    {
+      "id": "biology-01",
+      "category": "biology",
+      "title": "이미지 분류로 자동화한 교내 식물 도감",
+      "team": ["윤하은", "강태윤"],
+      "youtubeId": "dQw4w9WgXcQ",
+      "description": "CNN을 활용한 교내 식생 분류 프로젝트 (샘플 데이터).",
+      "award": null
+    },
+    {
+      "id": "earth-01",
+      "category": "earth",
+      "title": "지역 미세먼지 농도의 시계열 예측",
+      "team": ["문서준"],
+      "youtubeId": "dQw4w9WgXcQ",
+      "description": "LSTM 기반 대기질 예측 모델 (샘플 데이터).",
+      "award": null
+    },
+    {
+      "id": "humanities-01",
+      "category": "humanities",
+      "title": "생성형 AI가 만드는 지역 설화 스토리텔링",
+      "team": ["신아라", "임재현"],
+      "youtubeId": "dQw4w9WgXcQ",
+      "description": "지역 설화를 학습해 새로운 이야기를 생성하는 실험 (샘플 데이터).",
+      "award": null
+    }
+  ]
+}
