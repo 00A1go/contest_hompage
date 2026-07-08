@@ -79,7 +79,8 @@ python3 -m http.server 8000
 
 - [ ] 홈 취지문 5줄 — `index.html` 의 `manifesto__body` (주석 `TODO(콘텐츠)`)
 - [ ] 심사기준 표 — `about.html` 의 `criteria` 표 (주석 `TODO`)
-- [ ] 히어로 이미지 / 소개 영상 — `assets/images/`, `assets/video/` 및 `index.html` 의 소개 영상 영역
+- [~] 히어로 이미지 — 임시로 무료 이미지(Unsplash) 적용됨. 교체하려면 `assets/images/hero.jpg` 파일만 바꾸기 (대체본 `hero-alt.jpg` = 과학 공식 흑판)
+- [~] 소개 영상 — 임시로 무료 스톡 영상(Mixkit, 뉴럴 네트워크) 적용됨. 실제 홍보/하이라이트 영상이 나오면 `assets/video/intro.mp4` 와 포스터 `assets/images/intro-poster.jpg` 를 교체
 - [ ] 대회 대표 색상 — `assets/css/style.css` 의 `:root` 안 `--color-primary`
 - [ ] 공유 미리보기 이미지 — `assets/images/og-image.png`
 - [ ] 샘플 작품 데이터 — `data/works.json` (실제 접수 시작 전 교체)

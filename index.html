@@ -122,17 +122,20 @@
         <p class="eyebrow" data-index="03"><span class="eyebrow__line"></span> 소개 영상</p>
         <h2 class="section-title" id="video-title" data-reveal>대회, 1분으로 미리보기</h2>
         <div class="intro-video" style="margin-top: 28px;" data-reveal>
-          <!--
-            소개 영상 준비 시 아래 placeholder 를 제거하고 video 를 노출하세요.
-            자동재생을 위해 muted playsinline 은 반드시 유지 (CLAUDE.md gotchas).
-          <video autoplay muted loop playsinline poster="assets/images/hero.jpg">
+          <!-- 자동재생을 위해 muted playsinline 은 반드시 유지 (CLAUDE.md gotchas).
+               controls 는 common.js 가 마우스 오버 시에만 노출. 배경 영상 교체 시
+               assets/video/intro.mp4 와 poster 이미지를 바꾸면 됩니다. -->
+          <video
+            autoplay muted loop playsinline preload="metadata"
+            poster="assets/images/intro-poster.jpg"
+            data-hover-controls
+            aria-label="2026 AI 창의융합대회 소개 영상">
             <source src="assets/video/intro.mp4" type="video/mp4" />
+            <div class="intro-video__placeholder">
+              <span class="tag">Intro Video</span>
+              <span class="msg">브라우저가 영상을 지원하지 않습니다</span>
+            </div>
           </video>
-          -->
-          <div class="intro-video__placeholder">
-            <span class="tag">Intro Video</span>
-            <span class="msg">소개 영상 준비 중입니다</span>
-          </div>
         </div>
       </div>
     </section>

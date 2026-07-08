@@ -88,6 +88,18 @@
     items.forEach((el) => io.observe(el));
   };
 
+  /** 마우스 오버/포커스 시에만 video 컨트롤 노출 */
+  const wireHoverControls = () => {
+    document.querySelectorAll("video[data-hover-controls]").forEach((v) => {
+      const show = () => v.setAttribute("controls", "");
+      const hide = () => v.removeAttribute("controls");
+      v.addEventListener("mouseenter", show);
+      v.addEventListener("mouseleave", hide);
+      v.addEventListener("focusin", show);
+      v.addEventListener("focusout", hide);
+    });
+  };
+
   document.addEventListener("DOMContentLoaded", async () => {
     const header = await injectPartial("site-header", "partials/header.html");
     if (header) {
@@ -96,5 +108,6 @@
     }
     await injectPartial("site-footer", "partials/footer.html");
     wireReveal();
+    wireHoverControls();
   });
 })();
