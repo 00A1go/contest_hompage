@@ -7,3 +7,7 @@
 
 # Logs / temp
 *.log
+
+# Private working docs (kept local, not published)
+CLAUDE.md
+SPEC.md
