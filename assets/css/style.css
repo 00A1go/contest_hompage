@@ -579,58 +579,100 @@ table.criteria td:nth-child(2) { font-weight: 700; color: var(--color-primary); 
   font-family: var(--font-mono);
 }
 
-/* ----- 12. Schedule timeline ----- */
-.timeline { position: relative; margin-top: 8px; }
-.timeline::before {
-  content: "";
+/* ----- 12. Schedule track ----- */
+.track { position: relative; margin-top: 8px; }
+.track__list { list-style: none; margin: 0; padding: 0; }
+/* vertical rail on the right, running through the dots (placed by schedule.js) */
+.track__rail,
+.track__rail-fill {
   position: absolute;
-  left: 15px;
-  top: 8px;
-  bottom: 8px;
+  right: 27px;
   width: 2px;
-  background: linear-gradient(var(--color-primary), var(--color-hairline));
+  border-radius: 2px;
 }
-.tl-item {
+.track__rail { background: var(--color-hairline); }
+.track__rail-fill {
+  background: var(--color-primary);
+  height: 0;
+  transition: height 0.6s var(--ease);
+}
+
+.track__item {
   position: relative;
-  padding: 0 0 40px 52px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 22px 56px 22px 0;
+  border-bottom: 1px solid var(--color-hairline);
 }
-.tl-item:last-child { padding-bottom: 0; }
-.tl-item__dot {
+.track__item:first-child { border-top: 1px solid var(--color-hairline); }
+
+.track__info { display: flex; align-items: center; gap: 18px; min-width: 0; }
+.track__no {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  color: var(--color-muted);
+  min-width: 2ch;
+}
+.track__title { font-size: 1.15rem; }
+.track__date {
+  margin-top: 3px;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  letter-spacing: 0.02em;
+  color: var(--color-muted);
+}
+
+.track__dot {
   position: absolute;
-  left: 6px;
-  top: 4px;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background: #fff;
-  border: 3px solid var(--color-primary);
+  background: var(--color-bg);
+  border: 2px solid var(--color-hairline);
+  box-sizing: border-box;
+  z-index: 1;
+  transition: background-color 0.3s var(--ease), border-color 0.3s var(--ease),
+    box-shadow 0.3s var(--ease);
 }
-.tl-item--done .tl-item__dot { background: var(--color-primary); }
-.tl-item--now .tl-item__dot {
+/* 해당 시점이 되었거나 지나면 색칠 */
+.track__item.is-done .track__dot {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+}
+.track__item.is-done .track__title { color: var(--color-ink); }
+.track__item.is-done .track__date { color: var(--color-primary); }
+/* 현재 진행 중인 단계는 링 강조 */
+.track__item.is-current .track__dot {
   border-color: var(--color-ink);
   box-shadow: 0 0 0 5px rgba(74, 58, 255, 0.15);
 }
-.tl-item__date {
-  font-family: var(--font-mono);
-  font-size: 0.8rem;
-  letter-spacing: 0.04em;
-  color: var(--color-primary);
-  font-weight: 600;
+
+.track__legend {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px 8px;
+  margin-top: 20px;
+  font-size: 0.85rem;
+  color: var(--color-muted);
 }
-.tl-item__title { font-size: 1.2rem; margin-top: 4px; }
-.tl-item__desc { margin-top: 6px; color: var(--color-muted); font-size: 0.96rem; }
-.tl-item__badge {
+.track__legend .legend-dot:not(:first-child) { margin-left: 16px; }
+.legend-dot {
   display: inline-block;
-  margin-top: 8px;
-  font-family: var(--font-mono);
-  font-size: 0.66rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  padding: 3px 8px;
-  border-radius: 5px;
-  background: var(--color-ink);
-  color: var(--color-accent);
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: var(--color-bg);
+  border: 2px solid var(--color-hairline);
+  box-sizing: border-box;
+  vertical-align: -2px;
 }
+.legend-dot--done { background: var(--color-primary); border-color: var(--color-primary); }
 
 /* ----- 13. Works page ----- */
 .tabs {
