@@ -11,7 +11,9 @@
     humanities: "인문",
   };
   const ORDER = Object.keys(CATEGORIES);
-  const DEFAULT_CAT = "math";
+  const ALL = "all";                 // '전체' 탭 — 모든 분야 표시
+  const TABS = [ALL, ...ORDER];      // 탭 순서 (전체가 맨 앞)
+  const DEFAULT_CAT = ALL;
 
   const els = {
     tabs: document.getElementById("work-tabs"),
@@ -21,9 +23,9 @@
 
   let works = [];
 
-  /** 유효한 카테고리인지 확인 */
+  /** 유효한 탭인지 확인 (전체 포함) */
   const normalizeCat = (raw) =>
-    ORDER.includes(raw) ? raw : DEFAULT_CAT;
+    TABS.includes(raw) ? raw : DEFAULT_CAT;
 
   /** 현재 해시에서 카테고리 결정 */
   const catFromHash = () =>
@@ -35,14 +37,17 @@
       ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c])
     );
 
-  /** 작품 카드 마크업 */
-  const cardHTML = (w) => {
+  /** 작품 카드 마크업 (showCat: 전체 보기에서 분야 라벨 표시) */
+  const cardHTML = (w, showCat) => {
     const team = Array.isArray(w.team) ? w.team.join(", ") : "";
     const desc = w.description
       ? `<p class="work-card__desc">${esc(w.description)}</p>`
       : "";
     const award = w.award
       ? `<span class="work-card__award">${esc(w.award)}</span>`
+      : "";
+    const cat = showCat && CATEGORIES[w.category]
+      ? `<span class="work-card__cat">${esc(CATEGORIES[w.category])}</span>`
       : "";
     // YouTube ID는 이미 URL-safe → 인코딩하지 않음
     const embed = `https://www.youtube-nocookie.com/embed/${w.youtubeId}`;
@@ -59,6 +64,7 @@
             allowfullscreen></iframe>
         </div>
         <div class="work-card__body">
+          ${cat}
           ${award}
           <h3 class="work-card__title">${esc(w.title)}</h3>
           <p class="work-card__team">${esc(team)}</p>
@@ -73,7 +79,7 @@
 
   /** 지정 카테고리 렌더 */
   const render = (cat) => {
-    const list = works.filter((w) => w.category === cat);
+    const list = cat === ALL ? works : works.filter((w) => w.category === cat);
 
     // 탭 활성 상태
     els.tabs.querySelectorAll("[data-cat]").forEach((btn) => {
@@ -91,7 +97,7 @@
     }
     els.empty.hidden = true;
     els.grid.hidden = false;
-    els.grid.innerHTML = list.map(cardHTML).join("");
+    els.grid.innerHTML = list.map((w) => cardHTML(w, cat === ALL)).join("");
 
     // 새로 삽입된 카드 리빌 처리
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
@@ -122,11 +128,11 @@
     els.tabs.addEventListener("keydown", (e) => {
       if (e.key !== "ArrowRight" && e.key !== "ArrowLeft") return;
       const cur = catFromHash();
-      const idx = ORDER.indexOf(cur);
+      const idx = TABS.indexOf(cur);
       const next =
         e.key === "ArrowRight"
-          ? ORDER[(idx + 1) % ORDER.length]
-          : ORDER[(idx - 1 + ORDER.length) % ORDER.length];
+          ? TABS[(idx + 1) % TABS.length]
+          : TABS[(idx - 1 + TABS.length) % TABS.length];
       window.location.hash = next;
       els.tabs.querySelector(`[data-cat="${next}"]`)?.focus();
     });

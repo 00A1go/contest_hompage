@@ -747,6 +747,13 @@ table.criteria td:nth-child(2) { font-weight: 700; color: var(--color-primary); 
   background: var(--color-accent);
   color: var(--color-ink);
 }
+.work-card__cat {
+  align-self: flex-start;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  color: var(--color-muted);
+}
 .work-card__title { font-size: 1.12rem; }
 .work-card__team { color: var(--color-primary); font-size: 0.9rem; font-weight: 600; }
 .work-card__desc { color: var(--color-muted); font-size: 0.94rem; }
