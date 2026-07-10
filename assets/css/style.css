@@ -281,7 +281,8 @@ ul { margin: 0; padding: 0; list-style: none; }
 .footer__nav { display: flex; flex-wrap: wrap; gap: 8px 20px; }
 .footer__nav a { color: rgba(255, 255, 255, 0.72); font-size: 0.92rem; }
 .footer__nav a:hover { color: #fff; }
-.footer__contact a { color: var(--color-accent); font-family: var(--font-mono); }
+.footer__contact a { color: rgba(255, 255, 255, 0.72); font-family: var(--font-mono); }
+.footer__contact a:hover { color: #fff; }
 .footer__copy {
   font-size: 0.78rem;
   color: rgba(255, 255, 255, 0.44);
@@ -387,6 +388,14 @@ ul { margin: 0; padding: 0; list-style: none; }
   font-size: clamp(1rem, 2.6vw, 1.2rem);
   color: rgba(255, 255, 255, 0.78);
   max-width: 34ch;
+}
+/* Desktop: title and sub on a single line; small screens keep the wrap
+   (mobile-first base above uses the <br class="hero__br"> line break). */
+@media (min-width: 641px) {
+  .hero__inner { max-width: min(92%, 780px); }
+  .hero__title { white-space: nowrap; }
+  .hero__title .hero__br { display: none; }
+  .hero__sub { max-width: none; }
 }
 .hero__actions {
   margin-top: 36px;
@@ -867,15 +876,36 @@ table.criteria td:nth-child(2) { font-weight: 700; color: var(--color-primary); 
 .contact-method a { font-weight: 600; }
 
 /* ----- 16. Page header (interior pages) ----- */
+/* Same dark background photo as the home hero, so interior pages read as
+   part of the same site instead of a plain white block. */
 .page-head {
+  position: relative;
+  isolation: isolate;
+  color: #fff;
+  background-color: var(--color-night);
+  background-image:
+    linear-gradient(90deg, rgba(9, 10, 15, 0.95) 0%, rgba(9, 10, 15, 0.74) 52%, rgba(9, 10, 15, 0.56) 100%),
+    linear-gradient(180deg, rgba(9, 10, 15, 0.5) 0%, rgba(9, 10, 15, 0.62) 100%),
+    url("../images/hero.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
   padding-block: clamp(48px, 8vw, 88px) clamp(28px, 4vw, 44px);
-  border-bottom: 1px solid var(--color-border);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
 }
 .page-head__title {
+  color: #fff;
   font-size: clamp(2rem, 6vw, 3.2rem);
   letter-spacing: -0.03em;
 }
-.page-head__lead { margin-top: 16px; max-width: 56ch; color: var(--color-muted); font-size: 1.08rem; }
+.page-head__lead {
+  margin-top: 16px;
+  max-width: 56ch;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.08rem;
+}
+.page-head .eyebrow { color: rgba(255, 255, 255, 0.6); }
+.page-head .eyebrow::before { color: var(--color-accent); }
 
 /* CTA band */
 .cta-band {
