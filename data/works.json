@@ -1,47 +1,20 @@
 {
   "works": [
     {
-      "id": "physics-03",
+      "id": "physics-01",
       "category": "physics",
-      "title": "작품 주제",
-      "team": ["학생1", "학생2"],
-      "youtubeId": "kuBnRZd2aI4",
+      "title": "산의 세기와 부식성",
+      "team": ["정현아", "박해걍"],
+      "youtubeId": "kAQ5ryM1B5I",
       "description": "",
       "award": null
     },
     {
-      "id": "physics-04",
+      "id": "physics-02",
       "category": "physics",
-      "title": "작품 주제",
-      "team": ["학생1", "학생2"],
-      "youtubeId": "kuBnRZd2aI4",
-      "description": "",
-      "award": null
-    },
-    {
-      "id": "physics-05",
-      "category": "physics",
-      "title": "작품 주제",
-      "team": ["학생1", "학생2"],
-      "youtubeId": "kuBnRZd2aI4",
-      "description": "",
-      "award": null
-    },
-    {
-      "id": "physics-06",
-      "category": "physics",
-      "title": "작품 주제",
-      "team": ["학생1", "학생2"],
-      "youtubeId": "kuBnRZd2aI4",
-      "description": "",
-      "award": null
-    },
-    {
-      "id": "physics-07",
-      "category": "physics",
-      "title": "작품 주제",
-      "team": ["학생1", "학생2"],
-      "youtubeId": "kuBnRZd2aI4",
+      "title": "산의 세기와 부식성",
+      "team": ["정현아", "박해걍"],
+      "youtubeId": "kAQ5ryM1B5I",
       "description": "",
       "award": null
     }
