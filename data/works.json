@@ -1,7 +1,7 @@
 {
   "works": [
     {
-      "id": "physics-01",
+      "id": "physics-03",
       "category": "physics",
       "title": "산의 세기와 부식성",
       "team": ["정현아", "김해걍"],
@@ -10,7 +10,7 @@
       "award": null
     },
     {
-      "id": "physics-02",
+      "id": "physics-04",
       "category": "physics",
       "title": "산의 세기와 부식성",
       "team": ["정현아", "김해걍"],
