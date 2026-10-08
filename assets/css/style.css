@@ -581,6 +581,13 @@ table.criteria thead th {
 table.criteria tbody tr:last-child td { border-bottom: none; }
 table.criteria td:nth-child(2) { font-weight: 700; color: var(--color-primary); white-space: nowrap; }
 
+/* Awards table: highlight the award name instead of column 2 */
+table.criteria--awards { word-break: keep-all; }
+table.criteria--awards th { white-space: nowrap; }
+table.criteria--awards td:nth-child(2) { font-weight: inherit; color: inherit; white-space: normal; }
+table.criteria--awards td:first-child { font-weight: 700; color: var(--color-primary); white-space: nowrap; }
+table.criteria--awards td:nth-child(3) { white-space: nowrap; }
+
 .notice {
   margin-top: 16px;
   font-size: 0.85rem;
