@@ -10,11 +10,11 @@
       "award": null
     },
     {
-      "id": "physics-02",
+      "id": "earth-01",
       "category": "physics",
-      "title": "산의 세기와 부식성(예시 영상)",
-      "team": ["정현아", "김해강"],
-      "youtubeId": "kAQ5ryM1B5I",
+      "title": "해상 및 기상 위성 정보 기반 AI 낚시 포인트 예측 어플 개발",
+      "team": ["김표민", "이승훈"],
+      "youtubeId": "uii6jdb7_fM",
       "description": "",
       "award": null
     }
