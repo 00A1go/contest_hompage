@@ -11,7 +11,7 @@
     },
     {
       "id": "earth-01",
-      "category": "physics",
+      "category": "earth",
       "title": "해상 및 기상 위성 정보 기반 AI 낚시 포인트 예측 어플 개발",
       "team": ["김표민", "이승훈"],
       "youtubeId": "uii6jdb7_fM",
