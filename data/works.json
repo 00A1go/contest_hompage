@@ -300,5 +300,70 @@
       "award": null
     },
     
+    {
+      "id": "humanities-101",
+      "category": "humanities",
+      "title": "인공지능 기반 최적의 한국어 개사법 연구",
+      "team": ["황민혁", "양현동"],
+      "youtubeId": "WJPCU4J7NPI",
+      "description": "",
+      "award": null
+    },
+    {
+      "id": "humanities-102",
+      "category": "humanities",
+      "title": "AI를 활용한 텍스트 기반 MBTI 분류",
+      "team": ["이준호", "조창혁"],
+      "youtubeId": "BIdnpCLy5A0",
+      "description": "",
+      "award": null
+    },
+    {
+      "id": "humanities-103",
+      "category": "humanities",
+      "title": "AI는 뉴스의 감정을 얼마나 잘 구분할까",
+      "team": ["오태규", "김민기"],
+      "youtubeId": "1UuzIRHiqFw",
+      "description": "",
+      "award": null
+    },
+    {
+      "id": "humanities-211",
+      "category": "humanities",
+      "title": "언론 노출과 유행 문화의 쇠퇴 간의 상관및 인과 관계 분석",
+      "team": ["서하진", "정현아", "김해강"],
+      "youtubeId": "Hqm49P-SbBU",
+      "description": "",
+      "award": null
+    },
+
+    {
+      "id": "math-101",
+      "category": "math",
+      "title": "비밀번호의 문자 구조와 유출 목록 순위의 관계",
+      "team": ["김규민", "정제영", "진승헌"],
+      "youtubeId": "HjLRg5u2KoI",
+      "description": "",
+      "award": null
+    },
+    {
+      "id": "math-102",
+      "category": "math",
+      "title": "수학을 활용한 바이브코딩의 구조적 문제 개선",
+      "team": ["안건욱", "김도영", "오서진"],
+      "youtubeId": "CsCniWem1zQ",
+      "description": "",
+      "award": null
+    },
+    {
+      "id": "math-201",
+      "category": "math",
+      "title": "뉴턴 방법의 수렴 결과 예측 분류 알고리즘 성능 비교",
+      "team": ["고진현"],
+      "youtubeId": "siQumm7XwxM",
+      "description": "",
+      "award": null
+    }
+    
   ]
 }
