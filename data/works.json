@@ -83,7 +83,7 @@
     },
     {
       "id": "biology-101",
-      "category": "physics",
+      "category": "biology",
       "title": "병아리 울음소리 AI, 정말 스트레스를 들을까",
       "team": ["김다윤", "신혜진"],
       "youtubeId": "j644ejW-TIk",
@@ -92,7 +92,7 @@
     },
     {
       "id": "biology-102",
-      "category": "physics",
+      "category": "biology",
       "title": "암 유전자 발현량 기반 암 종류 분류",
       "team": ["김성현", "한준희"],
       "youtubeId": "5wSxKeC4fX8",
@@ -101,7 +101,7 @@
     },
     {
       "id": "biology-103",
-      "category": "physics",
+      "category": "biology",
       "title": "세포별 반응 차이를 고려한 광유전학 자극 최적화",
       "team": ["류지한", "배지현"],
       "youtubeId": "Jntf7DXzMLk",
@@ -110,7 +110,7 @@
     },
     {
       "id": "biology-104",
-      "category": "physics",
+      "category": "biology",
       "title": "기후와 슽레스에 따른 꿀벌 군집 손실률 예측 분석",
       "team": ["김재영", "이지훈"],
       "youtubeId": "nlgTowx7rJc",
@@ -119,7 +119,7 @@
     },
     {
       "id": "biology-105",
-      "category": "physics",
+      "category": "biology",
       "title": "환경 조건과 식물 기능형에 따른 연간 순 1차생산량NPP 예측 및 환경 제한 요인 진단",
       "team": ["김진서", "이주원"],
       "youtubeId": "oEUMtbslJbI",
@@ -128,7 +128,7 @@
     },
     {
       "id": "biology-106",
-      "category": "physics",
+      "category": "biology",
       "title": "뇌파로 뇌전증 발작을 미리 알 수 있을까",
       "team": ["김민준", "박경린"],
       "youtubeId": "gacYKaMztBY",
@@ -137,7 +137,7 @@
     },
     {
       "id": "biology-201",
-      "category": "physics",
+      "category": "biology",
       "title": "콩알의 형태 지표만으로 품종 7종을 구분할 수 있는가",
       "team": ["강종호"],
       "youtubeId": "EzZkMJLZ8Sc",
@@ -146,7 +146,7 @@
     },
     {
       "id": "biology-202",
-      "category": "physics",
+      "category": "biology",
       "title": "AI를 활용한 실험 조건과 효소 기질 특성의 영향 비교",
       "team": ["강중환"],
       "youtubeId": "JJKnt-IjzwU",
@@ -155,7 +155,7 @@
     },
     {
       "id": "biology-205",
-      "category": "physics",
+      "category": "biology",
       "title": "약물의 화학적 특성을 이용한 자가면역 관련 약물 분류 및 AI의 예측 오류 분석",
       "team": ["윤민솔"],
       "youtubeId": "umYI05RYk14",
@@ -164,7 +164,7 @@
     },
     {
       "id": "biology-206",
-      "category": "physics",
+      "category": "biology",
       "title": "다운증후군 모델 생쥐의 뇌 단백질로 유전형 예측",
       "team": ["이상원"],
       "youtubeId": "kVNWa1Rj3s8",
@@ -173,10 +173,65 @@
     },
     {
       "id": "biology-210",
-      "category": "physics",
+      "category": "biology",
       "title": "AI가 엽록체의 세포 내 공생 흔적을 추적 할 수 있을까",
       "team": ["한예나"],
       "youtubeId": "HI7rS7WY7PY",
+      "description": "",
+      "award": null
+    },
+
+    {
+      "id": "chemistry-101",
+      "category": "chemistry",
+      "title": "페로브스카이트 태양전지 효율 유지율 예측",
+      "team": ["윤주영", "이현우"],
+      "youtubeId": "O6PGOqPUoVM",
+      "description": "",
+      "award": null
+    },
+    {
+      "id": "chemistry-102",
+      "category": "chemistry",
+      "title": "유기분자의 구조적 특징을 이용한 물 용해도 예측",
+      "team": ["제승윤", "김단우"],
+      "youtubeId": "U1c2EePTL-I",
+      "description": "",
+      "award": null
+    },
+    {
+      "id": "chemistry-103",
+      "category": "chemistry",
+      "title": "QSAR 분자 서술자 기반의 화합물 생분해성 예측 DNN 모델 구축",
+      "team": ["김시영", "김성윤"],
+      "youtubeId": "Wr6iEKVDCLY",
+      "description": "",
+      "award": null
+    },
+    {
+      "id": "chemistry-104",
+      "category": "chemistry",
+      "title": "충방전 100번으로 배터리 수명을 미리 알 수 있을까",
+      "team": ["하준호", "양준모", "홍서진"],
+      "youtubeId": "UbC4XnRZYbg",
+      "description": "",
+      "award": null
+    },
+    {
+      "id": "chemistry-105",
+      "category": "chemistry",
+      "title": "화합물의 물리화학적 특성에 따른 수생독성 예측",
+      "team": ["김진겸", "이주아"],
+      "youtubeId": "c9NUepEXvC8",
+      "description": "",
+      "award": null
+    },
+    {
+      "id": "chemistry-213",
+      "category": "chemistry",
+      "title": "AI로 약의 용해도를 예측할 수 있을까",
+      "team": ["김건우"],
+      "youtubeId": "xqenPdAkLcY",
       "description": "",
       "award": null
     },
