@@ -237,13 +237,68 @@
     },
 
     {
-      "id": "earth-01",
+      "id": "earth-101",
       "category": "earth",
       "title": "해상 및 기상 위성 정보 기반 AI 낚시 포인트 예측 어플 개발",
       "team": ["김표민", "이승훈"],
       "youtubeId": "uii6jdb7_fM",
       "description": "",
       "award": null
-    }
+    },
+    {
+      "id": "earth-102",
+      "category": "earth",
+      "title": "AI를 활용한 병합 블랙홀의 초기 질량비 및 스핀 역추적",
+      "team": ["구승민", "구도윤"],
+      "youtubeId": "DK_J3qIKYLI",
+      "description": "",
+      "award": null
+    },
+    {
+      "id": "earth-103",
+      "category": "earth",
+      "title": "딥러닝을 활용한 달의 위상과 저주파 지진 발생 빈도의 관계 분석",
+      "team": ["장주은", "정은율", "최정민"],
+      "youtubeId": "3PIkiX7YIwI",
+      "description": "",
+      "award": null
+    },
+    {
+      "id": "earth-104",
+      "category": "earth",
+      "title": "지질·건물 요인에 따른 실내 라돈 기준 초과 여부 분석 및 인공지능 예측",
+      "team": ["김태영", "배지후"],
+      "youtubeId": "4lKBcpZYBRo",
+      "description": "",
+      "award": null
+    },
+    {
+      "id": "earth-105",
+      "category": "earth",
+      "title": "해안의 안개 AI는 내륙에서도 통할까",
+      "team": ["신하윤", "이지현", "이혜민"],
+      "youtubeId": "652IpsaBjsk",
+      "description": "",
+      "award": null
+    },
+    {
+      "id": "earth-203",
+      "category": "earth",
+      "title": "해수면온도 시계열 특징으로 Karenia brevis 강한 적조 분류하기",
+      "team": ["최준영"],
+      "youtubeId": "kiXKd3d5I7Q",
+      "description": "",
+      "award": null
+    },
+    {
+      "id": "earth-204",
+      "category": "earth",
+      "title": "AI는 화성의 지형을 구분할 수 있을까",
+      "team": ["정찬서"],
+      "youtubeId": "dahEYZdmKZY",
+      "description": "",
+      "award": null
+    },
+    
   ]
 }
