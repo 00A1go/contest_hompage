@@ -1,11 +1,83 @@
 {
   "works": [
     {
-      "id": "physics-01",
+      "id": "physics-101",
       "category": "physics",
-      "title": "산의 세기와 부식성(예시 영상)",
-      "team": ["정현아", "김해강"],
-      "youtubeId": "kAQ5ryM1B5I",
+      "title": "라그랑주 신경망(LNN)을 활용한 다중 역진자 운동 예측과 균형 제어",
+      "team": ["전하민", "김재현", "김민제"],
+      "youtubeId": "-hayn9HuntQ",
+      "description": "",
+      "award": null
+    },
+    {
+      "id": "physics-102",
+      "category": "physics",
+      "title": "편광 산란을 이용한 연기감지기 비화재보 저감 연구",
+      "team": ["박근형", "전지율", "최진훈"],
+      "youtubeId": "74WN7OVNSDg",
+      "description": "",
+      "award": null
+    },
+    {
+      "id": "physics-103",
+      "category": "physics",
+      "title": "탄산염 광물의 결정 구조 유형을 구별하는 최소 라만 관측 구간 탐색",
+      "team": ["구자건", "구현서"],
+      "youtubeId": "sTQE_IJJnhA",
+      "description": "",
+      "award": null
+    },
+    {
+      "id": "physics-104",
+      "category": "physics",
+      "title": "해안의 안개 AI는 내륙에서도 통할까",
+      "team": ["김건우", "김찬호"],
+      "youtubeId": "iNFexqFAfms",
+      "description": "",
+      "award": null
+    },
+    {
+      "id": "physics-105",
+      "category": "physics",
+      "title": "CNN·DNN 비교와 유전 알고리즘을 활용한 쇠구슬 배출 장애물 최적화",
+      "team": ["김재우", "서동해"],
+      "youtubeId": "mdvYuvDdPfM",
+      "description": "",
+      "award": null
+    },
+    {
+      "id": "physics-106",
+      "category": "physics",
+      "title": "Random Forest와 KNN을 활용한 기계 진동 센서의 이상치 복원 및 성능 비교",
+      "team": ["박지용", "고정운"],
+      "youtubeId": "hIudpPKdQyU",
+      "description": "",
+      "award": null
+    },
+    {
+      "id": "physics-211",
+      "category": "physics",
+      "title": "AI는 상대론 공식을 배울 수 있을까",
+      "team": ["오윤석"],
+      "youtubeId": "zjcSl18xVbw",
+      "description": "",
+      "award": null
+    },
+    {
+      "id": "physics-215",
+      "category": "physics",
+      "title": "PPO SAC를 활용한 10축 이족보행 모델 학습",
+      "team": ["최민석"],
+      "youtubeId": "-4F5nC97h5Y",
+      "description": "",
+      "award": null
+    },
+    {
+      "id": "physics-218",
+      "category": "physics",
+      "title": "초음파 센서 24개의 거리값만으로 어디로 갈지 판단하는 AI",
+      "team": ["정효인"],
+      "youtubeId": "bo0MlVtN7CE",
       "description": "",
       "award": null
     },
