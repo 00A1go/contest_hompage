@@ -336,6 +336,15 @@
       "description": "",
       "award": null
     },
+    {
+      "id": "humanities-212",
+      "category": "humanities",
+      "title": "AI는 시인의 문체를 반영할 수 있을까",
+      "team": ["김서윤", "이송주", "변정원"],
+      "youtubeId": "6exLCQV5iDw",
+      "description": "",
+      "award": null
+    },
 
     {
       "id": "math-101",
