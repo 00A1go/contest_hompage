@@ -13,7 +13,7 @@
       "id": "physics-102",
       "category": "physics",
       "title": "편광 산란을 이용한 연기감지기 비화재보 저감 연구",
-      "team": ["박근형", "전지율", "최진훈"],
+      "team": ["박근형", "전지율", "최지훈"],
       "youtubeId": "74WN7OVNSDg",
       "description": "",
       "award": null
@@ -30,7 +30,7 @@
     {
       "id": "physics-104",
       "category": "physics",
-      "title": "해안의 안개 AI는 내륙에서도 통할까",
+      "title": "센서별 측정 오차와 머신러닝을 이용한 측정값 보정",
       "team": ["김건우", "김찬호"],
       "youtubeId": "iNFexqFAfms",
       "description": "",
@@ -81,6 +81,17 @@
       "description": "",
       "award": null
     },
+    {
+      "id": "physics-210",
+      "category": "physics",
+      "title": "RLC 회로의 감쇠 상태 분류와 머신러닝 모델 성능 비교",
+      "team": ["이유"],
+      "youtubeId": "mgf8moOIeME",
+      "description": "",
+      "award": null
+    },
+
+    
     {
       "id": "biology-101",
       "category": "biology",
